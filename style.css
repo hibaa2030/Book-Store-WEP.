@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-/* تنسيق عام للصفحة */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,6 @@ body {
     line-height: 1.6;
     color: #333;
 }
-
 
 
 .bg::before {
@@ -69,39 +68,90 @@ header img {
     color: rgb(80, 192, 156);
 }
 
-
-
 .main {
+    
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    text-align: center;}
+    text-align: center; 
+}
 
-    .right-img {
-        float: right;
-        width: 50%; 
-        margin: 10px; 
+.HomePage {
+    min-height:70vh;
+    background: url("bg.png");
+    background-position: center;
+    background-size: cover;
+    padding-top: 10rem;
+    padding-right: 1rem;
+    padding-left: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  @media (max-width: 767px) {
+    .HomePage {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
     }
-
-.main h1 {
+  }
+  
+  .welcome {
+    /* العرض تاعها هون 45% وهو عرض الجزء الذي يحتوي على الكتابة والزر */
+    width: 45%;
+  }
+  .welcome h1 {
+    font-size: 2.3rem;
+  }
+  
+  .right-img {
+    /* عرض 50% لديف الصورة وهيك بضل 5%مساحة بين الويلكوم وهاي الديف */
+    width: 50%;
+    margin-top: -1.2rem;
+  }
+  .right-img img {
+    /* الاب لهاي الصورة هو الرايت ايمج والعرض تاعه 50% من الاب الهومبيج والصورة هون اذا تركتها مثل ما هي فهي ماخذة حجمها الاصلي والي هو اكبر من حجم الرايت ايمج ولهيك
+    انا بعطي الصورة ويدث 100% يعني انه العرض تاعها يكون 100% من عرض الاب تاعها او بمعنى اخر بصير حجم الصورة 50% من حجم الهومبيج وهيك الحجم بصير اصغر
+    */
+    width: 100%;
+  }
+  /* في الشاشات من 767بكسل وتحت اخفي الصورة وخلي النصوص الي بالويلكوم تيجي بالنص عشان يصير الشكل اجمل وبتقدري تشيلي الويلكوم من هون وتخليه زي ما هو على الشمال زي ما بدك يعني */
+  @media (max-width: 767px) {
+    .right-img {
+      display: none;
+    }
+    .welcome {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  /* -------------------- */
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .main h1 {
     font-size: 3rem;
     color: #000;
     margin-bottom: 10px;
-}
-
-.main h1 span {
+  }
+  
+  .main h1 span {
     color: rgb(80, 192, 156);
-}
-
-.main p {
+  }
+  
+  .main p {
     text-align: left;
     font-size: 1.2rem;
     margin-bottom: 20px;
     color: #555;
-}
-
-.mainbtn {
+  }
+  
+  .mainbtn {
     background-color: rgb(80, 192, 156);
     color: white;
     border: none;
@@ -112,10 +162,128 @@ header img {
     margin-left: 0;
     text-align: left;
     transition: background-color 0.3s ease;
-}
-div{
+  }
+  div {
     text-align: left;
-}
-.mainbtn:hover {
-    background-color: rgb(64, 154, 126);
-}
+  }
+  .mainbtn:hover {
+    background-color: rgb(64, 154, 126);
+  }
+  .bg {
+    min-width:100%;
+  }
+  
+  
+.container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    padding: 20px; 
+  }
+ 
+  
+  .box {
+    flex: 1; 
+    min-width: 200px; 
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 8px; 
+    background-color: #fff; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-top: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px #00bcd4;
+    width: 270px;
+    height: 150px;
+  }
+  
+ 
+  .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  .icon {
+    font-size: 40px; 
+    color: teal; 
+    margin-bottom: 10px; 
+  }
+  
+  
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 14px;
+    color:#000000;}
+
+  
+    .mainn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+      }
+      .leftimg {
+        flex-basis: 50%;
+      }
+      .leftimg img {
+        width: 100%;
+      }
+
+      .mainInfo {
+        flex-basis: 45%;
+        
+        text-align: left;
+      }
+      @media (max-width: 992px) {
+        .mainInfo {
+          flex-basis: 50%;
+        }
+      }
+      @media (max-width: 767px) {
+        .leftimg {
+          display: none;
+        }
+        .mainInfo {
+          flex-basis: 100%;
+        }
+      }
+      .main h1 {
+        font-size: 3rem;
+        color: #000;
+        margin-bottom: 10px;
+      }
+      
+      .main h1 span {
+        color: rgb(0, 0, 0);
+      }
+      
+      .main p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        color: #000000;
+      }
+      
+      .mainnbtn {
+        background-color: rgb(80, 192, 156);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: 0;
+        transition: background-color 0.3s ease;
+      }
+      .mainnbtn:hover {
+        background-color: rgb(64,154,126);
+      }
+      
