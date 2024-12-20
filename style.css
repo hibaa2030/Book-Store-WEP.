@@ -97,7 +97,6 @@ header img {
   }
   
   .welcome {
-    /* العرض تاعها هون 45% وهو عرض الجزء الذي يحتوي على الكتابة والزر */
     width: 45%;
   }
   .welcome h1 {
@@ -105,17 +104,13 @@ header img {
   }
   
   .right-img {
-    /* عرض 50% لديف الصورة وهيك بضل 5%مساحة بين الويلكوم وهاي الديف */
     width: 50%;
     margin-top: -1.2rem;
   }
   .right-img img {
-    /* الاب لهاي الصورة هو الرايت ايمج والعرض تاعه 50% من الاب الهومبيج والصورة هون اذا تركتها مثل ما هي فهي ماخذة حجمها الاصلي والي هو اكبر من حجم الرايت ايمج ولهيك
-    انا بعطي الصورة ويدث 100% يعني انه العرض تاعها يكون 100% من عرض الاب تاعها او بمعنى اخر بصير حجم الصورة 50% من حجم الهومبيج وهيك الحجم بصير اصغر
-    */
+    
     width: 100%;
   }
-  /* في الشاشات من 767بكسل وتحت اخفي الصورة وخلي النصوص الي بالويلكوم تيجي بالنص عشان يصير الشكل اجمل وبتقدري تشيلي الويلكوم من هون وتخليه زي ما هو على الشمال زي ما بدك يعني */
   @media (max-width: 767px) {
     .right-img {
       display: none;
@@ -125,7 +120,6 @@ header img {
       text-align: center;
     }
   }
-  /* -------------------- */
   .main {
     display: flex;
     align-items: center;
@@ -174,7 +168,7 @@ header img {
   }
   
   
-.container {
+.container1 {
     display: flex;
     justify-content: space-between; 
     gap: 20px; 
@@ -286,4 +280,154 @@ header img {
       .mainnbtn:hover {
         background-color: rgb(64,154,126);
       }
-      
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .container2 {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 20px;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .book-card {
+        flex: 0 0 auto;
+        width: 251px;
+        border: 1px solid #7a7575;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding-bottom: 35px;
+       transition: box-shadow 0.3 ease ;
+      }
+    .div .book-card:hover
+    {
+    box-shadow: 0 3px 6px  #479858; }
+  
+
+    .book-card img {
+        width: 80%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding: 10px ;
+    }
+
+    
+
+    .book-card .title {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px 0; 
+        text-align: center;
+    }
+
+    .book-card .author {
+        font-size: 14px;
+        color: #555;
+        text-align: center;
+    }
+
+    .book-card .genre {
+        font-size: 12px;
+        color: #1da785;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .old-price {
+        font-size: 14px;
+        color: #333;
+        text-align: center;
+        text-decoration: line-through;
+    }
+
+
+    
+    .price {
+        font-size: 18px;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .book .discounted-price {
+        color: #555;
+        text-decoration: line-through;
+        margin-right: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+  .learn-more {
+      border: 2px solid #1da785;
+      text-align: center;
+    border-radius: 1px;
+    color: #000;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    padding:5px;
+    } 
+    
+    
+/*اضافة ظل وتعديل لون الخط الافقي ز->*/
+
+.imgbanner{
+  width: 100%;
+  justify-content: center;
+  
+}
+
+.btn-learn-more{
+  background-color: #4caf50;
+  color: #ddd;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+
+}
+.btn-learn-more:hover{
+  background-color: #023b05;
+}
+.imgbanner img{
+  width: 100%;
+height: auto;
+display: block;
+}
+.buttonbanner{
+  position: absolute;
+  bottom: 5pc;
+  left:11.42%;
+  transform: translateX(-50%);
+}
+.btn-learn-more{
+  background-color: #2e8384;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.btn-learn-more:hover{
+  background-color: #45a049;
+}
+
+
+
+    
+ 
+
+
+
+
+
+
+     
