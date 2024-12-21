@@ -238,12 +238,9 @@ header img {
 
     .container2 {
         display: flex;
-        overflow-x: auto;
-        white-space: nowrap;
         padding: 1.25rem;
         gap: 1.25rem;
-        justify-content: space-between;
-    }
+        justify-content: space-between;}
 
     .book-card {
         flex: 0 0 auto;
